@@ -7,6 +7,7 @@ import EventDetails from "./Pages/EventDetails";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import MyBookings from "./Pages/MyBookings";
+import Booking from "./Pages/Booking";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/event" element={<Events />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/event/:id" element={<EventDetails />} />
